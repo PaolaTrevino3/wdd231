@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #f7f8fb;
+    color: #222;
+}
+
+header{
+    background-color: #1f3a5f;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-branding{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.site-branding span {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+#menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "=";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav {
+    display: none;
+    background-color: #2f5d8c;
+}
+
+nav.open {
+    display: block;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav a:hover,
+nav a:active {
+    background-color: #f2c14e;
+    color: #1f2933;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1{
+    color: #1f3a5f;
+}
+
+section{
+    background-color: white;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+section h2{
+    background-color: #1f3a5f;
+    color: white;
+    margin: 0;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+section p,
+.certificate-card div,
+#total-credits {
+    padding: 1rem;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.filter-buttons button {
+    border: none;
+    background-color: #1f3a5f;
+    color: white;
+    padding: 0.7rem 1.4rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.filter-buttons button:hover{
+    background-color: #f2c14e;
+    color: #1f2933;
+}
+
+#course-list {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.course-card {
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #e8edf5;
+    text-align: center;
+    font-weight: 700;
+}
+
+.course-card.completed {
+    background-color: #2f5d8c;
+    color: white;
+}
+
+#total-credits {
+    font-weight: 700;
+    text-align: center;
+}
+
+footer{
+    background-color: #1f3a5f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a{
+    color: white;
+    margin: 0 0.5rem;
+}
+
+footer a:hover{
+    color: #f2c14e;
+}

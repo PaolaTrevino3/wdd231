@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 course home page for Paola Trevino.">
+    <meta name="author" content="Paola Trevino">
+
+    <title>WDD 231 | Paola Trevino</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="site-branding">
+            <img src="images/logo.svg" alt="site logo" width="48" height="48">
+            <span>Paola Trevino</span>
+        </div>
+
+        <button id="menu" aria-label="Open navigation menu"></button>   
+    </header>
+
+    <nav id="navigation" >
+        <a href="index.html" class="active">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="final/index.html">Final</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="about-card">
+            <h2>About Me</h2>
+            <p>My name is Paola Trevino, I am studying Software Development through BYU-Pathway.
+                i enjoy learning web development, programming, languages, and building useful digital projects
+            </p>
+            </section>
+
+            <section class="location-card">
+                <h2>Student Photo</h2>
+                <p>
+
+                </p>
+                </section>
+
+                <section class="certificate-card">
+                    <h2>Web and Computer Programming Certificate</h2>
+
+                    <div class="filter-buttons">
+                        <button id="all">All</button>
+                        <button id="wdd">WDD</button>
+                        <button id="cse">CSE</button>
+                        </div>
+
+                    <div class="course-list"></div>
+
+                        <p id="total-credits"></p>
+                </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/PaolaTrevino3" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        </div>
+
+        <p>&copy; <span id="currentyear"></span> Paola Trevino | Texas </p>
+
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>
+                        
