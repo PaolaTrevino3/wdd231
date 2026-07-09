@@ -42,7 +42,7 @@ header{
 }
 
 #menu.open::before {
-    content: "X";
+    content: "x";
 }
 
 nav {
@@ -64,7 +64,7 @@ nav a {
 }
 
 nav a:hover,
-nav a:active {
+nav a.active {
     background-color: #f2c14e;
     color: #1f2933;
 }
@@ -96,8 +96,11 @@ section h2{
 }
 
 section p,
-.certificate-card div,
 #total-credits {
+    padding: 1rem;
+}
+
+.certificate-card {
     padding: 1rem;
 }
 
@@ -119,6 +122,11 @@ section p,
 }
 
 .filter-buttons button:hover{
+    background-color: #f2c14e;
+    color: #1f2933;
+}
+
+.filter-buttons button.active {
     background-color: #f2c14e;
     color: #1f2933;
 }

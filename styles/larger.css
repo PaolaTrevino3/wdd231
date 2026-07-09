@@ -9,17 +9,26 @@
     }
 
     nav a {
-        flex: 1 1 auto;
+        flex: 1;
     }
 
     main {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 1rem;
+        align-items: start;
     }
 
     h1 {
         grid-column: 1 / 3;
+    }
+
+    .about-card {
+        grid-column: 1;
+    }
+
+    location-card {
+        grid-column: 2;
     }
 
     .certificate-card {
@@ -27,6 +36,8 @@
     }
 
     #course-list {
-        grid-template-columns: repeat(3, 1fr);  
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem; 
     }
 }
