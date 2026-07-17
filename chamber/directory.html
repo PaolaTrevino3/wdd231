@@ -22,9 +22,9 @@
 
         <link rel="icon" href="images/favicon.ico">
 
-        link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lore:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/small.css">
@@ -46,13 +46,9 @@
                 <div class="logo-mark" aria-hidden="true">
                     GTO
                 </div>
-
-                <div class="logo-mark" aria-hidden="true">
-                    GTO
-                </div>
                 <div>
                     <span class="site-name">Guanajuato</span>
-                    <span class="subtitle">Chamber of Commerce</span>
+                    <span class="site-subtitle">Chamber of Commerce</span>
                 </div>
                 </a>
 
@@ -109,7 +105,7 @@
                 aria-label="Directory view options"
                 >
                     <button
-                    id="grid-view"
+                    id="grid-button"
                     class="active-view"
                     type="button"
                     aria-pressed="true"
@@ -124,8 +120,9 @@
                     >
                     List view
                     </button>
-            </div>
-        </div>
+                </div>
+
+                <div id="members" class="member-grid" aria-live="polite"></div>
             </section>
         </main>
 
@@ -134,21 +131,17 @@
                 <section>
                     <h2>Guanajuato Chamber of Commerce</h2>
 
+                    <p>Plaza de la Paz 14</p>
+
+                    <p>Zona Centro, Guanajuato, GTO 36000</p>
+
                     <p>
-                        Plaza de la Paz 14
-                        </p>
+                        <a href="mailto:info@guanajuatochamber.com">info@guanajuatochamber.com</a>
+                    </p>
 
-                        <p>
-                            Zona Centro, Guanajuato, GTO 36000
-                        </p>
-
-                        <p>
-                            <a href="mailto:info@guanajuatochamber.com">info@guanajuatochamber.com</a>
-                        </p>
-
-                        <p>
-                            <a href="tel:+524712345678">+52 (471) 123-4567</a>
-                        </p>
+                    <p>
+                        <a href="tel:+524712345678">+52 (471) 123-4567</a>
+                    </p>
                 </section>
 
                 <section
@@ -173,23 +166,15 @@
                     href="https://www.linkedin.com/company/guanajuatochamber"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >LinkedIn</a>   
+                    >LinkedIn</a>
                 </section>
 
                 <section>
                     <h2>Development Information</h2>
-                    <p>
-                    Paola Trevino
-                    </p>
-
-                    <p>
-                        WDD 231
-                    </p>
-                     © <span id="current-year"></span> Guanajuato Chamber
-                    <p>
-
-                    Last Modification: <span id="last-modified"></span>
-                    </p>      
+                    <p>Paola Trevino</p>
+                    <p>WDD 231</p>
+                    <p>© <span id="current-year"></span> Guanajuato Chamber</p>
+                    <p>Last Modification: <span id="last-modified"></span></p>
                 </section>
             </div>
         </footer>

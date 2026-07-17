@@ -23,7 +23,7 @@ async function getMemberData() {
 
     displayMembers(data.members);
 } catch (error) {
-    membersContainer.innerHTML = `
+    memberContainer.innerHTML = `
       <p class="error-message">
         The member directory is temporarily unavailable.
       </p>
@@ -44,7 +44,7 @@ function getMembershipName(level) {
 }
 
 function displayMembers(members) {
-  membersContainer.innerHTML = "";
+  memberContainer.innerHTML = "";
 
   members.forEach((member) => {
     const card = document.createElement("article");
@@ -90,19 +90,19 @@ function displayMembers(members) {
       </div>
     `;
 
-    membersContainer.appendChild(card);
+    memberContainer.appendChild(card);
   });
 }
 
 function setView(view) {
   const showGrid = view === "grid";
 
-  membersContainer.classList.toggle(
+  memberContainer.classList.toggle(
     "member-grid",
     showGrid
   );
 
-  membersContainer.classList.toggle(
+  memberContainer.classList.toggle(
     "member-list",
     !showGrid
   );
