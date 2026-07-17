@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Business Directory | Guanajuato Chamber of Commerce </title>
+        <title>Business Directory | Guanajuato Chamber of Commerce</title>
 
         <meta name="description" content="Explore businesses and organizations that are members of the Guanajuato Chamber of Commerce directory.">
 
@@ -93,33 +93,36 @@
             <section class="directory-section"
             aria-labelledby="directory-heading">
                 <div class="directory-toolbar">
-                    <h2 id="directory-heading">Chamber members</h2>
+                    <div>
+                        <h2 id="directory-heading">Chamber Members</h2>
 
-                    <p>
-                        Choose a card grid or a simplified list.
-                    </p>
-                </div>
-                
-                <div
-                class="view-buttons"
-                aria-label="Directory view options"
-                >
-                    <button
-                    id="grid-button"
-                    class="active-view"
-                    type="button"
-                    aria-pressed="true"
-                    >
-                    Grid view
-                    </button>
+                        <p>
+                            Choose a card grid or a simplified list.
+                        </p>
+                    </div>
 
-                    <button
-                    id="list-button"
-                    type="button"
-                    aria-pressed="false"
+                    <div
+                    class="view-buttons"
+                    role="group"
+                    aria-label="Directory view options"
                     >
-                    List view
-                    </button>
+                        <button
+                        id="grid-button"
+                        class="active-view"
+                        type="button"
+                        aria-pressed="true"
+                        >
+                        Grid view
+                        </button>
+
+                        <button
+                        id="list-button"
+                        type="button"
+                        aria-pressed="false"
+                        >
+                        List view
+                        </button>
+                    </div>
                 </div>
 
                 <div id="members" class="member-grid" aria-live="polite"></div>
