@@ -14,7 +14,7 @@
         margin: 0;
         padding-left: max(
             1rem,
-            calc ((100vw - 1200px) / 2)
+            calc((100vw - 1200px) / 2)
         );
     }
 
@@ -46,7 +46,7 @@
   .member-grid {
     grid-template-columns: repeat(
         2,
-        minimax(0, 1fr)
+        minmax(0, 1fr)
     );
   }
 
@@ -56,9 +56,9 @@
       box-shadow 0.2s ease;
   }
 
-  .member-grid, .member-card:hover {
-transform: translateY(-4px);
-box-shadow: 0 14px 28px rgba(23, 77, 60, 0.2);
+  .member-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(23, 77, 60, 0.2);
   }
   
   .member-list .member-content {
