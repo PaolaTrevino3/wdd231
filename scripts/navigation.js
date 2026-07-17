@@ -1,7 +1,38 @@
-const menuButton = document.querySelector("#menu");
-const navigation = document.querySelector("#navigation");
+const menuButton = document.querySelector("#menu-button");
+const navigation = document.querySelector("#primary-navigation");
 
 menuButton.addEventListener("click", () => {
-    menuButton.classList.toggle("open");
-    navigation.classList.toggle("open");
+    const isOpen = navigation.classList.toggle("open");
+
+    menuButton.setAttribute(
+        "aria-expanded",
+        String(isOpen)
+    );
+
+    menuButton.setAttribute(
+        "aria-label",
+        isOpen
+        ? "Close navigation menu"
+        : "Open navigation menu"
+    );
+
+    menuButton.textContent = isOpen ? "x" : "☰";
+});
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth >= 700) {
+        navigation.classList.remove("open");
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+        menuButton.setAttribute(
+            "aria-label",
+            "Open navigation menu"
+        );
+
+        menuButton.textContent = "☰";
+    }
 });
