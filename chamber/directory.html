@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Business Directory | Guanajuato Chamber of Commerce </title>
+
+        <meta name="description" content="Explore businesses and organizations that are members of the Guanajuato Chamber of Commerce directory.">
+
+        <meta name="author" content="Paola Trevino">
+
+        <meta property="og:title" content="Guanajuato Chamber of Commerce Directory">
+
+        <meta property="og:description" content="Discover local businesses and organizations in the Guanajuato Chamber of Commerce directory.">
+
+        <meta property="og:image" content="https://paolatrevino3.github.io/wdd231/chamber/images/social-preview.webp">
+
+        <meta property="og:url" content="https://paolatrevino3.github.io/wdd231/chamber/directory.html">
+
+        <meta property="og:type" content="website">
+
+        <link rel="icon" href="images/favicon.ico">
+
+        link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lore:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/directory.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="site-brand">
+                <a
+                class="brand-link"
+                href="index.html"
+                aria-label="Guanajuato Chamber of Commerce Home Page"
+                >
+                <div class="logo-mark" aria-hidden="true">
+                    GTO
+                </div>
+
+                <div class="logo-mark" aria-hidden="true">
+                    GTO
+                </div>
+                <div>
+                    <span class="site-name">Guanajuato</span>
+                    <span class="subtitle">Chamber of Commerce</span>
+                </div>
+                </a>
+
+                <button
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                >
+                ☰
+                </button>
+            </div>
+
+            <nav 
+            id="primary-navigation"
+            aria-label="Primary navigation"
+            >
+                <a href="index.html">Home</a>
+
+                <a href="directory.html" 
+                class="active"
+                aria-current="page"
+                >Directory</a>
+
+                <a href="join.html">Join</a>
+
+                <a href="discover.html">Discover</a>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="page-intro">
+                <p class="eyebrow">Local enterprise. Shared prosperity.</p>
+
+                <h1>Guanajuato Business Directory</h1>
+
+                <p>
+                    Meet the businesses and organizations that help Guanajuato grow while preserving the culture, color, and character of our historic city.
+                </p>
+            </section>
+
+            <section class="directory-section"
+            aria-labelledby="directory-heading">
+                <div class="directory-toolbar">
+                    <h2 id="directory-heading">Chamber members</h2>
+
+                    <p>
+                        Choose a card grid or a simplified list.
+                    </p>
+                </div>
+                
+                <div
+                class="view-buttons"
+                aria-label="Directory view options"
+                >
+                    <button
+                    id="grid-view"
+                    class="active-view"
+                    type="button"
+                    aria-pressed="true"
+                    >
+                    Grid view
+                    </button>
+
+                    <button
+                    id="list-button"
+                    type="button"
+                    aria-pressed="false"
+                    >
+                    List view
+                    </button>
+            </div>
+        </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-grid">
+                <section>
+                    <h2>Guanajuato Chamber of Commerce</h2>
+
+                    <p>
+                        Plaza de la Paz 14
+                        </p>
+
+                        <p>
+                            Zona Centro, Guanajuato, GTO 36000
+                        </p>
+
+                        <p>
+                            <a href="mailto:info@guanajuatochamber.com">info@guanajuatochamber.com</a>
+                        </p>
+
+                        <p>
+                            <a href="tel:+524712345678">+52 (471) 123-4567</a>
+                        </p>
+                </section>
+
+                <section
+                class="social-links"
+                aria-label="Social media links"
+                >
+                    <h2>Connect with us</h2>
+
+                    <a
+                    href="https://www.facebook.com/guanajuatochamber"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Facebook</a>
+
+                    <a
+                    href="https://www.instagram.com/guanajuatochamber"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Instagram</a>
+
+                    <a
+                    href="https://www.linkedin.com/company/guanajuatochamber"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a>   
+                </section>
+
+                <section>
+                    <h2>Development Information</h2>
+                    <p>
+                    Paola Trevino
+                    </p>
+
+                    <p>
+                        WDD 231
+                    </p>
+                     © <span id="current-year"></span> Guanajuato Chamber
+                    <p>
+
+                    Last Modification: <span id="last-modified"></span>
+                    </p>      
+                </section>
+            </div>
+        </footer>
+    </body>
+</html>
