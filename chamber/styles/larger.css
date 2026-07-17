@@ -1,0 +1,95 @@
+@media screen and (min-width: 700px) {
+    #menu-button {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: minmax(280px, 1fr) auto;
+        align-items: center;
+    }
+
+    .site-brand {
+        width: 100%;
+        margin: 0;
+        padding-left: max(
+            1rem,
+            calc ((100vw - 1200px) / 2)
+        );
+    }
+
+    #primary-navigation {
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    background-color: transparent;
+    padding-right: max(
+      1rem,
+      calc((100vw - 1200px) / 2)
+    );
+  }
+
+  #primary-navigation a {
+    display: grid;
+    place-items: center;
+    min-width: 105px;
+    border-top: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  .directory-toolbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .member-grid {
+    grid-template-columns: repeat(
+        2,
+        minimax(0, 1fr)
+    );
+  }
+
+  .member-card {
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .member-grid, .member-card:hover {
+transform: translateY(-4px);
+box-shadow: 0 14px 28px rgba(23, 77, 60, 0.2);
+  }
+  
+  .member-list .member-content {
+    grid-template-columns:
+      1.5fr
+      2fr
+      1.2fr
+      auto;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .member-list .member-card h3,
+  .member-list .member-card p,
+  .member-list .member-card a {
+    margin: 0;
+  }
+
+  .footer-grid {
+    grid-template-columns:
+      1.4fr
+      0.8fr
+      1.2fr;
+  }
+  }
+@media screen and (min-width: 1050px) {
+    .page-intro {
+        padding: 3.25rem 3rem;
+    }
+
+    .member-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
