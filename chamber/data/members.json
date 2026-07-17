@@ -1,0 +1,78 @@
+{
+    "members": [
+        {
+            "name": "Café Callejón",
+            "address": "Calle del Truco 8, Zona Centro, Guanajuato",
+            "phone": "+52 473 555 0101",
+            "website": "https://example.com/cafe-callejon",
+            "image": "cafe-callejon.webp",
+            "membership": 3,
+            "description": "A local café serving Mexican coffee, pastries, and breakfast near the historic center."
+        },
+        {
+            "name": "Hotel Mirador del Pípila",
+            "address": "Panorámica 112, Guanajuato, GTO",
+            "phone": "+52 473 555 0102",
+            "website": "https://example.com/hotel-mirador",
+            "image": "hotel-mirador.webp",
+            "membership": 3,
+            "description": "A boutique hotel with panoramic views, traditional design, and personalized service."
+ 
+        },
+        {
+            "name": "Artesanías La Valenciana",
+            "address": "Plaza de la Valenciana 4, Guanajuato, GTO",
+            "phone": "+52 473 555 0103",
+            "website": "https://example.com/artesanias-valenciana",
+            "image": "artesanias-valenciana.webp",
+            "membership": 2,
+            "description": "Handmade ceramics, textiles, decorative pieces, and regional gifts created by local artisans."
+        },
+        {
+             "name": "Dulces Tradicionales Hidalgo",
+             "address": "Avenida Juárez 36, Zona Centro, Guanajuato",
+             "phone": "+52 473 555 0104",
+             "website": "https://example.com/dulces-hidalgo",
+             "image": "dulces-hidalgo.webp",
+             "membership": 1,
+             "description": "Traditional Mexican candies, cajeta, cocadas, and regional treats prepared in small batches."
+
+        },
+        {
+            "name": "Guanajuato Cultural Tours",
+            "address": "Jardín de la Unión 12, Guanajuato, GTO",
+            "phone": "+52 473 555 0105",
+            "website": "https://example.com/cultural-tours",
+            "image": "cultural-tours.webp",
+            "membership": 2,
+            "description": "Guided walking tours through alleys, museums, historic mines, and architectural landmarks."
+        },
+        {
+           "name": "Restaurante Cantera Rosa",
+           "address": "Positos 21, Zona Centro, Guanajuato",
+           "phone": "+52 473 555 0106",
+           "website": "https://example.com/cantera-rosa",
+           "image": "cantera-rosa.webp",
+           "membership": 3,
+           "description": "Contemporary Mexican cuisine inspired by traditional flavors and ingredients from the Bajío." 
+        },
+        {
+           "name": "Teatro Juárez Eventos",
+           "address": "Sopeña 10, Zona Centro, Guanajuato",
+           "phone": "+52 473 555 0107",
+           "website": "https://example.com/teatro-eventos",
+           "image": "teatro-eventos.webp",
+           "membership": 1,
+           "description": "Event planning and cultural programming for performances, conferences, and community gatherings."
+        },
+        {
+            "name": "Minería Verde Consultores",
+            "address": "Carretera Panorámica 208, Guanajuato, GTO",
+            "phone": "+52 473 555 0108",
+            "website": "https://example.com/mineria-verde",
+            "image": "mineria-verde.webp",
+            "membership": 2,
+            "description": "Environmental consulting and sustainable planning services for regional businesses."
+        }
+    ]
+}
