@@ -266,25 +266,6 @@ main {
     background: linear-gradient(135deg, #ffffff, #f4f0e8);
 }
 
-.weather-main {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 0.8rem;
-}
-
-.weather-temp {
-    margin: 0;
-    color: var(--green);
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.weather-note {
-    margin: 0.5rem 0 0;
-    color: var(--muted);
-}
-
 .forecast-section {
     margin-top: 1rem;
 }
