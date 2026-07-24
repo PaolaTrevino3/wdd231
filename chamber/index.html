@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Home | Guanajuato Chamber of Commerce</title>
+
+        <meta
+            name="description"
+            content="Discover events, weather, business opportunities, and featured members of the Guanajuato Chamber of Commerce."
+        >
+
+        <meta name="author" content="Paola Trevino">
+
+        <meta property="og:title" content="Guanajuato Chamber of Commerce">
+
+        <meta
+            property="og:description"
+            content="Connect with local businesses, events, and economic opportunities through the Guanajuato Chamber of Commerce."
+        >
+
+        <meta property="og:image" content="https://paolatrevino3.github.io/wdd231/chamber/images/social-preview.webp">
+
+        <meta
+            property="og:url"
+            content="https://paolatrevino3.github.io/wdd231/chamber/"
+        >
+
+        <meta property="og:type" content="website">
+
+        <link rel="icon" href="images/favicon.ico">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/weather.js" defer></script>
+        <script src="scripts/spotlights.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="site-brand">
+                <a
+                    class="brand-link"
+                    href="index.html"
+                    aria-label="Guanajuato Chamber of Commerce Home Page"
+                >
+                    <div class="logo-mark" aria-hidden="true">
+                        GTO
+                    </div>
+                    <div>
+                        <span class="site-name">Guanajuato</span>
+                        <span class="site-subtitle">Chamber of Commerce</span>
+                    </div>
+                </a>
+
+                <button
+                    id="menu-button"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+            </div>
+
+            <nav
+                id="primary-navigation"
+                aria-label="Primary navigation"
+            >
+                <a href="index.html" class="active" aria-current="page">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="discover.html">Discover</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero-section" aria-labelledby="hero-heading">
+                <div class="hero-copy">
+                    <p class="eyebrow">Economic vitality in Guanajuato</p>
+                    <h1 id="hero-heading">Grow your business with the local chamber.</h1>
+                    <p>
+                        Discover member opportunities, community events, and practical resources that connect entrepreneurs, visitors, and residents.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button-primary" href="join.html">Join the Chamber</a>
+                        <a class="button-secondary" href="directory.html">Browse members</a>
+                    </div>
+                </div>
+
+                <img
+                    src="images/hotel-mirador.webp"
+                    alt="Historic Guanajuato streets and hospitality spaces"
+                    width="720"
+                    height="480"
+                    loading="eager"
+                >
+            </section>
+
+            <section class="home-grid" aria-label="Chamber highlights">
+                <section class="panel-section" aria-labelledby="events-heading">
+                    <div class="panel-header">
+                        <h2 id="events-heading">Current events</h2>
+                        <p>Local gatherings that support commerce and culture.</p>
+                    </div>
+
+                    <ul class="event-list">
+                        <li>
+                            <strong>Night Market &amp; Artisan Fair</strong>
+                            <span>Friday • 6:00 PM • Plaza de la Paz</span>
+                        </li>
+                        <li>
+                            <strong>Small Business Roundtable</strong>
+                            <span>Saturday • 10:30 AM • Centro de Negocios</span>
+                        </li>
+                        <li>
+                            <strong>Historic District Walk</strong>
+                            <span>Sunday • 4:00 PM • Jardín de la Unión</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="panel-section" aria-labelledby="weather-heading">
+                    <div class="panel-header">
+                        <h2 id="weather-heading">Current weather</h2>
+                        <p>Comfortable conditions for exploring downtown Guanajuato.</p>
+                    </div>
+
+                    <div id="weather-widget" class="weather-card" aria-live="polite"></div>
+                </section>
+            </section>
+
+            <section class="panel-section forecast-section" aria-labelledby="forecast-heading">
+                <div class="panel-header">
+                    <h2 id="forecast-heading">Three-day forecast</h2>
+                    <p>Plan ahead for the next few days.</p>
+                </div>
+
+                <div id="forecast-list" class="forecast-list"></div>
+            </section>
+
+            <section class="panel-section" aria-labelledby="spotlights-heading">
+                <div class="panel-header">
+                    <h2 id="spotlights-heading">Featured businesses</h2>
+                    <p>Members that help shape the local economy.</p>
+                </div>
+
+                <div id="spotlights" class="spotlight-grid" aria-live="polite"></div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-grid">
+                <section>
+                    <h2>Guanajuato Chamber of Commerce</h2>
+
+                    <p>Plaza de la Paz 14</p>
+
+                    <p>Zona Centro, Guanajuato, GTO 36000</p>
+
+                    <p>
+                        <a href="mailto:info@guanajuatochamber.com">info@guanajuatochamber.com</a>
+                    </p>
+
+                    <p>
+                        <a href="tel:+524712345678">+52 (471) 123-4567</a>
+                    </p>
+                </section>
+
+                <section class="social-links" aria-label="Social media links">
+                    <h2>Connect with us</h2>
+
+                    <a
+                        href="https://www.facebook.com/guanajuatochamber"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >Facebook</a>
+
+                    <a
+                        href="https://www.instagram.com/guanajuatochamber"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >Instagram</a>
+
+                    <a
+                        href="https://www.linkedin.com/company/guanajuatochamber"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >LinkedIn</a>
+                </section>
+
+                <section>
+                    <h2>Development Information</h2>
+                    <p>Paola Trevino</p>
+                    <p>WDD 231</p>
+                    <p>© <span id="current-year"></span> Guanajuato Chamber</p>
+                    <p>Last Modification: <span id="last-modified"></span></p>
+                </section>
+            </div>
+        </footer>
+    </body>
+</html>

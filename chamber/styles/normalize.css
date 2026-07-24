@@ -31,7 +31,7 @@ a {
     background-color: transparent; 
 }
 
-abbr [title] {
+abbr[title] {
     border-bottom: none; 
     text-decoration: underline dotted; 
 }
@@ -84,7 +84,8 @@ button, select {
 }
 
 button, [type="button"], [type="reset"], [type="submit"] {
-    -webkit-appearance: button; 
+    -webkit-appearance: button;
+    appearance: button; 
 }
 
 fieldset {

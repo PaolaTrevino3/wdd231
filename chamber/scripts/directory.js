@@ -1,11 +1,6 @@
-const memberContainer =
-document.querySelector("#members");
-
-const gridButton =
-document.querySelector("#grid-button");
-
-const listButton =
-  document.querySelector("#list-button");
+const memberContainer = document.querySelector("#members");
+const gridButton = document.querySelector("#grid-button");
+const listButton = document.querySelector("#list-button");
 
 async function getMemberData() {
   try {
@@ -54,7 +49,7 @@ function displayMembers(members) {
     card.innerHTML =`
       <img
         src="images/${member.image}"
-        alt="${member.name}"
+        alt="${member.name} business logo"
         width="400"
         height="260"
         loading="lazy"
@@ -82,7 +77,7 @@ function displayMembers(members) {
         <a
           href="${member.website}"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           aria-label="Visit the ${member.name} website"
         >
           Visit Website
@@ -128,12 +123,14 @@ function setView(view) {
   );
 }
 
-gridButton.addEventListener("click", () => {
-  setView("grid");
-});
+if (memberContainer && gridButton && listButton) {
+  gridButton.addEventListener("click", () => {
+    setView("grid");
+  });
 
-listButton.addEventListener("click", () => {
-  setView("list");
-});
+  listButton.addEventListener("click", () => {
+    setView("list");
+  });
 
-getMemberData();
+  getMemberData();
+}
