@@ -1,33 +1,43 @@
-const submission = sessionStorage.getItem("chamberJoinSubmission");
+const params = new URLSearchParams(window.location.search);
 
-if (submission) {
-    const values = JSON.parse(submission);
-    const fullName = `${values["first-name"] || ""} ${values["last-name"] || ""}`.trim();
-    const businessName = values["business-name"] || "your business";
+function displayValue(selector, parameterName) {
+    const element = document.querySelector(selector);
+    const value = params.get(parameterName);
 
-    const nameTarget = document.querySelector("#confirmation-name");
-    const businessTarget = document.querySelector("#confirmation-business");
-    const membershipTarget = document.querySelector("#confirmation-membership");
-    const emailTarget = document.querySelector("#confirmation-email");
-    const phoneTarget = document.querySelector("#confirmation-phone");
-
-    if (nameTarget) {
-        nameTarget.textContent = fullName || "you";
+    if (element) {
+        element.textContent = value || "Not provided";
     }
+}
 
-    if (businessTarget) {
-        businessTarget.textContent = businessName;
-    }
+displayValue("#confirmation-first", "first");
+displayValue("#confirmation-last", "last");
+displayValue("#confirmation-email", "email");
+displayValue("#confirmation-phone", "phone");
+displayValue("#confirmation-organization", "organization");
 
-    if (membershipTarget) {
-        membershipTarget.textContent = values.membership || "Pending";
-    }
+const timestampElement =
+    document.querySelector("#confirmation-timestamp");
 
-    if (emailTarget) {
-        emailTarget.textContent = values.email || "Pending";
-    }
+const timestampValue =
+    params.get("timestamp");
 
-    if (phoneTarget) {
-        phoneTarget.textContent = values.phone || "Pending";
+if (timestampElement) {
+    if (timestampValue) {
+        const applicationDate =
+            new Date(timestampValue);
+
+        if (!Number.isNaN(applicationDate.getTime())) {
+            timestampElement.textContent =
+                applicationDate.toLocaleString("en-US", {
+                    dateStyle: "long",
+                    timeStyle: "short"
+                });
+        } else {
+            timestampElement.textContent =
+                timestampValue;
+        }
+    } else {
+        timestampElement.textContent =
+            "Not provided";
     }
 }
