@@ -344,8 +344,8 @@ main {
     margin: 0 auto 1.25rem;
     padding: 2rem 1.25rem;
     border-radius: 20px;
-    background: linear-gradient(135deg, var(--pink), var(--pink-dark));
-    color: var(--white);
+    background-color: var(--cream);
+    color: var(--text);
     text-align: center;
     box-shadow: var(--shadow);
 }
@@ -365,6 +365,7 @@ main {
     position: relative;
     z-index: 1;
     margin: 0.25rem 0 0.75rem;
+    color: var(--green);
     font-family: "Lora", Georgia, serif;
     font-size: clamp(2rem, 8vw, 3.2rem);
     line-height: 1.1;
@@ -375,11 +376,12 @@ main {
     z-index: 1;
     max-width: 760px;
     margin: 0;
+    color: var(--muted);
 }
 
 .eyebrow {
     margin-bottom: 0.4rem;
-    color: #fff2b4;
+    color: var(--pink-dark);
     font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 0.1rem;
