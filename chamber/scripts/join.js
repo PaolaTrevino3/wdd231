@@ -1,13 +1,40 @@
-const joinForm = document.querySelector("#join-form");
+const timestampInput = document.querySelector("#timestamp");
 
-if (joinForm) {
-    joinForm.addEventListener("submit", (event) => {
-        event.preventDefault();
+const modalButtons = document.querySelectorAll(".modal-button");
 
-        const formData = new FormData(joinForm);
-        const values = Object.fromEntries(formData.entries());
+const closeButtons = document.querySelectorAll(".close-modal");
 
-        sessionStorage.setItem("chamberJoinSubmission", JSON.stringify(values));
-        window.location.href = "thankyou.html";
-    });
+const dialogs = document.querySelectorAll("dialog");
+
+if (timestampInput) {
+    timestampInput.value = new Date().toISOString();
 }
+
+modalButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        const modalId = button.dataset.modal;
+        const modal = document.querySelector(`#${modalId}`);
+
+        if (modal) {
+            modal.showModal();
+        }
+    });
+});
+
+closeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        const dialog = button.closest("dialog");
+
+        if (dialog) {
+            dialog.close();
+        }
+    });
+});
+
+dialogs.forEach((dialog) => {
+    dialog.addEventListener("click", (event) => {
+        if (event.target === dialog) {
+            dialog.close();
+        }
+    });
+});
