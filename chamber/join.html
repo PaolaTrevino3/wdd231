@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Join | Guanajuato Chamber of Commerce</title>
+
+        <meta
+            name="description"
+            content="Applt to join the Guanajuato Chamber of Commerce and explore available membership levels and benefits.">
+
+        <meta name="author" content="Paola Trevino">
+
+        <meta property="og:title" content="Join the Guanajuato Chamber of Commerce">
+
+        <meta
+            property="og:description"
+            content="Become a member and grow your business/organizationzz alongside Guanajuato's vibrant business community."
+        >
+
+        <meta property="og:image" content="https://paolatrevino3.github.io/wdd231/chamber/images/social-preview.webp">
+
+        <meta property="og:url" content="https://paolatrevino3.github.io/wdd231/chamber/join.html">
+
+        <meta property="og:type" content="website">
+
+        <link rel="icon" href="images/favicon.ico">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/join.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="site-brand">
+                <a class="brand-link" href="index.html">
+                    <span class="logo-mark">GC</span>
+
+                    <span>
+                        <span class="site-name">
+                            Guanajuato
+                        </span>
+                        <span class="site-subtitle">
+                            Chamber of Commerce
+                        </span>
+                    </span>
+                </a>
+                   
+                <button
+                    id="menu-button"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="primary-navigation"
+                >☰</button>
+            </div>
+
+            <nav id="primary-navigation" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html" class="active" aria-current="page">Join</a>
+                <a href="discover.html">Discover</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="page-intro">
+                <p class="eyebrow">Grow with our community</p>
+                <h1>Become a chamber member</h1>
+                <p>
+                    Tell us about your business and choose a membership level that fits your goals. We will use your information to welcome you to the chamber and guide your next steps.
+                </p>
+            </section>
+
+            <section class="page-card join-layout" aria-labelledby="join-heading">
+                <div>
+                    <h2 id="join-heading">Membership options</h2>
+                    <ul class="membership-list">
+                        <li><strong>Non-profit</strong> — Ideal for community organizations and local initiatives.</li>
+                        <li><strong>Bronze</strong> — Entry-level access to events, networking, and directory visibility.</li>
+                        <li><strong>Silver</strong> — Expanded promotion, member discounts, and leadership opportunities.</li>
+                        <li><strong>Gold</strong> — Premium exposure with featured spotlight placement and priority support.</li>
+                    </ul>
+                </div>
+
+                <form id="join-form" class="join-form" novalidate>
+                    <div class="form-grid">
+                        <div class="field-group">
+                            <label for="first-name">First name</label>
+                            <input id="first-name" name="first-name" type="text" required>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="last-name">Last name</label>
+                            <input id="last-name" name="last-name" type="text" required>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="business-name">Business name</label>
+                            <input id="business-name" name="business-name" type="text" required>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="email">Email address</label>
+                            <input id="email" name="email" type="email" required>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="phone">Phone number</label>
+                            <input id="phone" name="phone" type="tel" required>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="membership">Membership level</label>
+                            <select id="membership" name="membership" required>
+                                <option value="">Select a level</option>
+                                <option value="Non-profit">Non-profit</option>
+                                <option value="Bronze">Bronze</option>
+                                <option value="Silver">Silver</option>
+                                <option value="Gold">Gold</option>
+                            </select>
+                        </div>
+
+                        <div class="field-group full">
+                            <label for="business-description">How would you like to participate?</label>
+                            <textarea id="business-description" name="business-description" rows="4" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="button-primary" type="submit">Submit application</button>
+                        <a class="button-secondary" href="index.html">Return home</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-grid">
+                <section>
+                    <h2>Guanajuato Chamber of Commerce</h2>
+                    <p>Plaza de la Paz 14</p>
+                    <p>Zona Centro, Guanajuato, GTO 36000</p>
+                    <p><a href="mailto:info@guanajuatochamber.com">info@guanajuatochamber.com</a></p>
+                    <p><a href="tel:+524712345678">+52 (471) 123-4567</a></p>
+                </section>
+
+                <section class="social-links" aria-label="Social media links">
+                    <h2>Connect with us</h2>
+                    <a href="https://www.facebook.com/guanajuatochamber" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.instagram.com/guanajuatochamber" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.linkedin.com/company/guanajuatochamber" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </section>
+
+                <section>
+                    <h2>Development Information</h2>
+                    <p>Paola Trevino</p>
+                    <p>WDD 231</p>
+                    <p>© <span id="current-year"></span> Guanajuato Chamber</p>
+                    <p>Last Modification: <span id="last-modified"></span></p>
+                </section>
+            </div>
+        </footer>
+    </body>
+</html>

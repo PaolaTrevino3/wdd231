@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Thank You | Guanajuato Chamber of Commerce</title>
+
+        <meta
+            name="description"
+            content="Thank you for joining the Guanajuato Chamber of Commerce."
+        >
+
+        <meta name="author" content="Paola Trevino">
+
+        <link rel="icon" href="images/favicon.ico">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/thankyou.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="site-brand">
+                <a
+                    class="brand-link"
+                    href="index.html"
+                    aria-label="Guanajuato Chamber of Commerce Home Page"
+                >
+                    <div class="logo-mark" aria-hidden="true">GTO</div>
+                    <div>
+                        <span class="site-name">Guanajuato</span>
+                        <span class="site-subtitle">Chamber of Commerce</span>
+                    </div>
+                </a>
+
+                <button
+                    id="menu-button"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                >☰</button>
+            </div>
+
+            <nav id="primary-navigation" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html" class="active" aria-current="page">Join</a>
+                <a href="discover.html">Discover</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="page-intro">
+                <p class="eyebrow">Welcome aboard</p>
+                <h1>Thank you for joining</h1>
+                <p>
+                    Your chamber application has been received. A member of our team will be in touch soon with the next steps.
+                </p>
+            </section>
+
+            <section class="page-card confirmation-card" aria-labelledby="confirmation-heading">
+                <h2 id="confirmation-heading">Application summary</h2>
+                <p>We are excited to welcome <strong id="confirmation-name">you</strong> and <strong id="confirmation-business">your business</strong>.</p>
+
+                <div class="confirmation-details">
+                    <p><strong>Membership level:</strong> <span id="confirmation-membership">Pending</span></p>
+                    <p><strong>Email:</strong> <span id="confirmation-email">Pending</span></p>
+                    <p><strong>Phone:</strong> <span id="confirmation-phone">Pending</span></p>
+                </div>
+
+                <div class="form-actions">
+                    <a class="button-primary" href="directory.html">Explore members</a>
+                    <a class="button-secondary" href="index.html">Back to home</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-grid">
+                <section>
+                    <h2>Guanajuato Chamber of Commerce</h2>
+                    <p>Plaza de la Paz 14</p>
+                    <p>Zona Centro, Guanajuato, GTO 36000</p>
+                    <p><a href="mailto:info@guanajuatochamber.com">info@guanajuatochamber.com</a></p>
+                    <p><a href="tel:+524712345678">+52 (471) 123-4567</a></p>
+                </section>
+
+                <section class="social-links" aria-label="Social media links">
+                    <h2>Connect with us</h2>
+                    <a href="https://www.facebook.com/guanajuatochamber" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.instagram.com/guanajuatochamber" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.linkedin.com/company/guanajuatochamber" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </section>
+
+                <section>
+                    <h2>Development Information</h2>
+                    <p>Paola Trevino</p>
+                    <p>WDD 231</p>
+                    <p>© <span id="current-year"></span> Guanajuato Chamber</p>
+                    <p>Last Modification: <span id="last-modified"></span></p>
+                </section>
+            </div>
+        </footer>
+    </body>
+</html>
