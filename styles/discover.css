@@ -1,0 +1,142 @@
+.discover-intro,
+.discover-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.discover-intro {
+    text-align: center;
+}
+
+.discover-intro h1,
+.discover-content > h2 {
+    color: var(--green-dark);
+}
+
+.discover-intro .eyebrow {
+    color: var(--pink-dark);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.visit-message {
+    max-width: 1100px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background: var(--green-dark);
+    color: var(--white);
+    border-left: 6px solid var(--yellow);
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.places-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.place-card {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "image"
+        "address"
+        "description"
+        "button";
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.place-card h2 {
+    grid-area: title;
+    margin: 0;
+    color: var(--pink-dark);
+}
+
+.place-card figure {
+    grid-area: image;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.place-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.place-card address {
+    grid-area: address;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--green-dark);
+}
+
+.place-card p {
+    grid-area: description;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.place-card button {
+    grid-area: button;
+    justify-self: start;
+    padding: 0.65rem 1rem;
+    border: 0;
+    border-radius: 6px;
+    background: var(--pink-dark);
+    color: var(--white);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .place-card {
+        grid-template-columns: 300px 1fr;
+        grid-template-areas:
+            "image title"
+            "image address"
+            "image description"
+            "image button";
+    }
+
+    .place-card img {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .places-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .place-card {
+        grid-template-columns: 300px 1fr;
+        grid-template-areas:
+            "title title"
+            "image address"
+            "image description"
+            "image button";
+    }
+
+    .place-card img {
+        width: 300px;
+        height: 200px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .place-card img:hover {
+        transform: scale(1.04);
+        filter: brightness(1.08);
+    }
+}

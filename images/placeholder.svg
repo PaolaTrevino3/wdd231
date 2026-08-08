@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Placeholder scenic image">
+  <rect width="600" height="400" fill="#e9f3f2"/>
+  <rect x="40" y="60" width="520" height="280" rx="24" fill="#ffffff"/>
+  <path d="M90 280c40-80 90-120 160-120 50 0 95 28 145 80l55 60H90z" fill="#2f5d8c"/>
+  <circle cx="200" cy="150" r="38" fill="#f2c14e"/>
+  <path d="M420 160l70 70-50 50-90-90z" fill="#b85a6a"/>
+  <rect x="130" y="310" width="340" height="18" rx="9" fill="#1f3a5f" opacity="0.2"/>
+</svg>

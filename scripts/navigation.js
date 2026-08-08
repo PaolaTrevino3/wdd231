@@ -1,38 +1,24 @@
-const menuButton = document.querySelector("#menu-button");
-const navigation = document.querySelector("#primary-navigation");
+const menuButton = document.querySelector("#menu") || document.querySelector("#menu-button");
+const navigation = document.querySelector("#navigation") || document.querySelector("#primary-navigation");
 
-menuButton.addEventListener("click", () => {
-    const isOpen = navigation.classList.toggle("open");
+if (menuButton && navigation) {
+    menuButton.addEventListener("click", () => {
+        const isOpen = navigation.classList.toggle("open");
 
-    menuButton.setAttribute(
-        "aria-expanded",
-        String(isOpen)
-    );
-
-    menuButton.setAttribute(
-        "aria-label",
-        isOpen
-        ? "Close navigation menu"
-        : "Open navigation menu"
-    );
-
-    menuButton.textContent = isOpen ? "x" : "☰";
-});
-
-window.addEventListener("resize", () => {
-    if (window.innerWidth >= 700) {
-        navigation.classList.remove("open");
-
-        menuButton.setAttribute(
-            "aria-expanded",
-            "false"
-        );
-
+        menuButton.setAttribute("aria-expanded", String(isOpen));
         menuButton.setAttribute(
             "aria-label",
-            "Open navigation menu"
+            isOpen ? "Close navigation menu" : "Open navigation menu"
         );
+        menuButton.classList.toggle("open", isOpen);
+    });
 
-        menuButton.textContent = "☰";
-    }
-});
+    window.addEventListener("resize", () => {
+        if (window.innerWidth >= 700) {
+            navigation.classList.remove("open");
+            menuButton.classList.remove("open");
+            menuButton.setAttribute("aria-expanded", "false");
+            menuButton.setAttribute("aria-label", "Open navigation menu");
+        }
+    });
+}
