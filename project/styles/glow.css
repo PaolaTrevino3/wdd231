@@ -365,19 +365,6 @@ main {
 
   background: rgba(109, 63, 75, 0.13);
 }
-
-.hero-label {
-  position: absolute;
-
-  left: 2rem;
-  bottom: 2rem;
-
-  font-family: var(--heading-font);
-
-  color: var(--berry);
-
-  font-size: 1.7rem;
-  font-weight: 700;
 }
 
 .section {
