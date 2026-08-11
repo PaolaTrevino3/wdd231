@@ -1,74 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Glow Guide is a simple skincare website that helps beginners build healthy, realistic skincare routines.">
+
+  <title>Glow Guide | Skincare Made Understandable</title>
+
+  <meta
+    name="description"
+    content="Glow Guide helps beginners understand skincare ingredients, build realistic routines, and make informed choices without pressure or perfection."
+  >
   <meta name="author" content="Paola Trevino">
-  <title>Glow Guide | Home</title>
+
+  <meta property="og:title" content="Glow Guide | Skincare Made Understandable">
+  <meta
+    property="og:description"
+    content="Explore skincare ingredients and build a simple routine that fits your skin."
+  >
+  <meta property="og:type" content="website">
+  <meta
+    property="og:url"
+    content="https://paolatrevino3.github.io/wdd231/project/"
+  >
+  <meta
+    property="og:image"
+    content="https://paolatrevino3.github.io/wdd231/project/images/social-preview.webp"
+  >
+
+  <link rel="icon" href="images/favicon.ico">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/project.css">
-  <script src="scripts/project.js" defer></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles/glow.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script type="module" src="scripts/main.js"></script>
 </head>
-<body>
-  <header>
-    <a class="logo" href="index.html">Glow Guide</a>
-    <button id="menu" aria-label="Open navigation menu">☰</button>
-    <nav class="navigation">
-      <a href="index.html" class="active">Home</a>
-      <a href="routines.html">Routines</a>
-      <a href="contact.html">Skin Quiz</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-text">
-        <p class="tagline">Simple skincare for real life</p>
-        <h1>Build a routine your skin can actually understand.</h1>
-        <p>Glow Guide helps beginners learn the basics of cleansing, moisturizing, and sun protection without buying ten mysterious bottles that all look expensive and suspicious.</p>
-        <a class="button" href="routines.html">Explore Routines</a>
+<body data-page="home">
+
+<header class="site-header">
+  <a class="logo" href="index.html">Glow Guide</a>
+
+  <button
+    id="menu-button"
+    class="menu-button"
+    type="button"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+    aria-controls="main-navigation"
+  >
+    ☰
+  </button>
+
+  <nav id="main-navigation" class="navigation" aria-label="Main navigation">
+    <a class="active" href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="routine.html">Build a Routine</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Skincare without the pressure</p>
+
+      <h1>Understand your skin. Build a routine that makes sense.</h1>
+
+      <p class="hero-copy">
+        Glow Guide makes skincare easier to understand through clear ingredient
+        education, realistic routines, and practical guidance built around
+        consistency rather than perfection.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button primary-button" href="explore.html">
+          Explore Ingredients
+        </a>
+
+        <a class="text-link" href="routine.html">
+          Build My Routine →
+        </a>
       </div>
-      <picture>
-        <source srcset="images/skincare-hero-small.webp" media="(max-width: 600px)">
-        <img src="images/skincare-hero.webp" alt="Skincare products arranged on a clean bathroom counter">
-      </picture>
-    </section>
+    </div>
 
-    <section class="intro section-card">
-      <h2>Why a simple routine matters</h2>
-      <p>A consistent skincare routine can support healthy-looking skin, protect the skin barrier, and reduce common problems caused by dryness, oil buildup, and sun exposure. The best routine is not the longest one. It is the one you can follow every day.</p>
-    </section>
+    <div class="hero-art base-art" aria-hidden="true">
+      <div class="glow-orb glow-orb-one"></div>
+      <div class="glow-orb glow-orb-two"></div>
 
-    <section class="cards-grid" id="home-cards">
-      <article class="info-card">
-        <img src="images/cleanser.webp" alt="Gentle facial cleanser bottle" loading="lazy">
+      <div class="hero-label">
+        Skin education.<br>
+        Less confusion.
+      </div>
+    </div>
+  </section>
+
+  <section class="section intro-section">
+    <div class="section-heading">
+      <p class="eyebrow">The essentials</p>
+
+      <h2>Start with what your skin actually needs.</h2>
+
+      <p>
+        Most routines begin with a few dependable steps. More products do not
+        automatically mean better skincare.
+      </p>
+    </div>
+
+    <div class="essential-grid">
+
+      <a class="essential-card cleanser-theme" href="explore.html?category=cleansing">
+        <span class="card-number">01</span>
+
         <h3>Cleanse</h3>
-        <p>Remove sweat, sunscreen, and oil without stripping your skin.</p>
-      </article>
-      <article class="info-card">
-        <img src="images/moisturizer.webp" alt="Moisturizer cream jar" loading="lazy">
+
+        <p>
+          Remove sunscreen, oil, sweat, and buildup without treating your skin
+          like a kitchen floor.
+        </p>
+
+        <span class="card-link">Explore cleansing →</span>
+      </a>
+
+      <a class="essential-card moisturizer-theme" href="explore.html?category=barrier">
+        <span class="card-number">02</span>
+
         <h3>Moisturize</h3>
-        <p>Support your skin barrier with hydration that matches your skin type.</p>
-      </article>
-      <article class="info-card">
-        <img src="images/sunscreen.webp" alt="Tube of sunscreen near a mirror" loading="lazy">
+
+        <p>
+          Support hydration and the skin barrier with ingredients suited to
+          your needs.
+        </p>
+
+        <span class="card-link">Explore barrier care →</span>
+      </a>
+
+      <a class="essential-card sunscreen-theme" href="explore.html?category=sun-care">
+        <span class="card-number">03</span>
+
         <h3>Protect</h3>
-        <p>Use sunscreen during the day to help prevent sun damage.</p>
+
+        <p>
+          Daily sun protection helps reduce UV damage and supports long-term
+          skin health.
+        </p>
+
+        <span class="card-link">Explore sun care →</span>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="section philosophy-section">
+
+    <div class="section-heading">
+      <p class="eyebrow">Our approach</p>
+
+      <h2>Healthy guidance without impossible standards.</h2>
+    </div>
+
+    <div class="philosophy-grid">
+
+      <article>
+        <span class="philosophy-icon" aria-hidden="true">◎</span>
+
+        <h3>Understand</h3>
+
+        <p>
+          Learn what ingredients do and why they may appear in a routine before
+          spending money on them.
+        </p>
       </article>
-    </section>
 
-    <section class="section-card visit-box">
-      <h2>Your saved skin type</h2>
-      <p id="saved-message">Take the skin quiz to save your skin type.</p>
-    </section>
-  </main>
+      <article>
+        <span class="philosophy-icon" aria-hidden="true">◇</span>
 
-  <footer>
-    <p>© <span id="year"></span> Glow Guide | Paola Trevino</p>
-    <p><a href="references.html">References</a></p>
-  </footer>
+        <h3>Choose</h3>
+
+        <p>
+          Skin varies from person to person. Glow Guide provides general
+          education rather than pretending one routine works for everyone.
+        </p>
+      </article>
+
+      <article>
+        <span class="philosophy-icon" aria-hidden="true">○</span>
+
+        <h3>Build</h3>
+
+        <p>
+          Start with a routine that fits real life. Consistency tends to be
+          more useful than an overloaded bathroom shelf.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section profile-section">
+
+    <div class="profile-card">
+
+      <div>
+        <p class="eyebrow">Your Glow Profile</p>
+
+        <h2 id="profile-title">Your routine starts here.</h2>
+
+        <p id="saved-profile">
+          Build a Glow Profile to save your skin type and routine preferences
+          on this device.
+        </p>
+      </div>
+
+      <a class="button secondary-button" href="routine.html">
+        Build My Glow Profile
+      </a>
+
+    </div>
+  </section>
+
+  <section class="section disclaimer-card">
+    <h2>Skincare education, not medical diagnosis.</h2>
+
+    <p>
+      Glow Guide provides general skincare education. Persistent irritation,
+      painful acne, sudden skin changes, allergic reactions, or other medical
+      concerns should be evaluated by a qualified healthcare professional.
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+
+  <div>
+    <a class="footer-logo" href="index.html">Glow Guide</a>
+
+    <p>Understand more. Use less. Care consistently.</p>
+  </div>
+
+  <div class="footer-links">
+    <a href="explore.html">Explore</a>
+    <a href="routine.html">Build a Routine</a>
+    <a href="attributions.html">Attributions</a>
+
+    <a href="https://youtu.be/REPLACE-WITH-VIDEO-ID">
+      Project Video
+    </a>
+  </div>
+
+  <div class="footer-meta">
+    <p>
+      &copy;
+      <span id="current-year"></span>
+      Glow Guide | Paola Trevino
+    </p>
+
+    <p id="last-modified"></p>
+  </div>
+
+</footer>
+
 </body>
 </html>

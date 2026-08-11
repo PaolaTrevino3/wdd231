@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Glow Guide | Build Your Skincare Routine</title>
+
+  <meta
+    name="description"
+    content="Build a simple Glow Guide skincare routine based on skin type, primary concern, and preferred routine length."
+  >
+
+  <meta name="author" content="Paola Trevino">
+
+  <meta
+    property="og:title"
+    content="Glow Guide | Build Your Routine"
+  >
+
+  <meta
+    property="og:description"
+    content="Create a realistic skincare routine based on your preferences."
+  >
+
+  <meta property="og:type" content="website">
+
+  <meta
+    property="og:url"
+    content="https://paolatrevino3.github.io/wdd231/project/routine.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://paolatrevino3.github.io/wdd231/project/images/social-preview.webp"
+  >
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles/glow.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/routine.js"></script>
+</head>
+
+<body data-page="routine">
+
+<header class="site-header">
+
+  <a class="logo" href="index.html">
+    Glow Guide
+  </a>
+
+  <button
+    id="menu-button"
+    class="menu-button"
+    type="button"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+    aria-controls="main-navigation"
+  >
+    ☰
+  </button>
+
+  <nav
+    id="main-navigation"
+    class="navigation"
+    aria-label="Main navigation"
+  >
+
+    <a href="index.html">
+      Home
+    </a>
+
+    <a href="explore.html">
+      Explore
+    </a>
+
+    <a
+      class="active"
+      href="routine.html"
+    >
+      Build a Routine
+    </a>
+
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+
+    <p class="eyebrow">
+      Your Glow Profile
+    </p>
+
+    <h1>
+      Build a routine around real life.
+    </h1>
+
+    <p>
+      Choose your skin type, main concern, and preferred routine length.
+      Glow Guide will create a simple educational routine preview.
+    </p>
+  </section>
+
+  <div class="routine-layout">
+
+    <section class="routine-form-card">
+
+      <form
+        id="routine-form"
+        action="results.html"
+        method="get"
+      >
+
+        <h2>
+          Tell us about your skin
+        </h2>
+
+        <label for="name">
+          Name
+        </label>
+
+        <input
+          id="name"
+          name="name"
+          type="text"
+          autocomplete="given-name"
+          required
+        >
+
+        <label for="email">
+          Email
+        </label>
+
+        <input
+          id="email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+        >
+
+        <label for="skin-type">
+          Skin type
+        </label>
+
+        <select
+          id="skin-type"
+          name="skin-type"
+          required
+        >
+
+          <option
+            value=""
+            disabled
+            selected
+          >
+            Choose your skin type
+          </option>
+
+          <option value="dry">
+            Dry
+          </option>
+
+          <option value="oily">
+            Oily
+          </option>
+
+          <option value="combination">
+            Combination
+          </option>
+
+          <option value="sensitive">
+            Sensitive
+          </option>
+
+        </select>
+
+        <label for="concern">
+          Main skincare goal
+        </label>
+
+        <select
+          id="concern"
+          name="concern"
+          required
+        >
+
+          <option
+            value=""
+            disabled
+            selected
+          >
+            Choose one goal
+          </option>
+
+          <option value="hydration">
+            Hydration
+          </option>
+
+          <option value="breakouts">
+            Breakouts
+          </option>
+
+          <option value="redness">
+            Redness or sensitivity
+          </option>
+
+          <option value="brightening">
+            Uneven tone
+          </option>
+
+          <option value="texture">
+            Texture
+          </option>
+
+          <option value="renewal">
+            Fine lines and renewal
+          </option>
+
+        </select>
+
+        <fieldset>
+
+          <legend>
+            Routine preference
+          </legend>
+
+          <label class="radio-option">
+
+            <input
+              type="radio"
+              name="routine-length"
+              value="simple"
+              required
+            >
+
+            <span>
+              <strong>Simple</strong>
+              3–4 steps
+            </span>
+
+          </label>
+
+          <label class="radio-option">
+
+            <input
+              type="radio"
+              name="routine-length"
+              value="detailed"
+            >
+
+            <span>
+              <strong>Detailed</strong>
+              5–6 steps
+            </span>
+
+          </label>
+
+        </fieldset>
+
+        <button
+          id="preview-button"
+          class="button secondary-button"
+          type="button"
+        >
+          Preview My Routine
+        </button>
+
+        <button
+          class="button primary-button"
+          type="submit"
+        >
+          Save My Glow Profile
+        </button>
+
+      </form>
+
+    </section>
+
+    <aside
+      id="routine-preview"
+      class="routine-preview"
+    >
+
+      <p class="eyebrow">
+        Routine preview
+      </p>
+
+      <h2>
+        Your suggested routine will appear here.
+      </h2>
+
+      <p>
+        Choose your skin type and concern, then select
+        <strong>Preview My Routine</strong>.
+      </p>
+
+    </aside>
+
+  </div>
+
+  <section class="section disclaimer-card">
+
+    <h2>
+      A routine is a starting point.
+    </h2>
+
+    <p>
+      Introduce new products thoughtfully and pay attention to irritation.
+      Glow Guide provides educational suggestions rather than personalized
+      medical treatment.
+    </p>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+
+  <div>
+    <a class="footer-logo" href="index.html">
+      Glow Guide
+    </a>
+
+    <p>
+      Understand more. Use less. Care consistently.
+    </p>
+  </div>
+
+  <div class="footer-links">
+    <a href="explore.html">Explore</a>
+    <a href="routine.html">Build a Routine</a>
+    <a href="attributions.html">Attributions</a>
+
+    <a href="https://youtu.be/REPLACE-WITH-VIDEO-ID">
+      Project Video
+    </a>
+  </div>
+
+  <div class="footer-meta">
+    <p>
+      &copy;
+      <span id="current-year"></span>
+      Glow Guide | Paola Trevino
+    </p>
+
+    <p id="last-modified"></p>
+  </div>
+
+</footer>
+
+</body>
+</html>

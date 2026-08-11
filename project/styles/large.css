@@ -1,0 +1,111 @@
+@media screen and (min-width: 700px) {
+
+  .menu-button {
+    display: none;
+  }
+
+  .navigation {
+    position: static;
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    box-shadow: none;
+  }
+
+  .hero {
+    grid-template-columns:
+      minmax(0, 1.05fr)
+      minmax(340px, 0.95fr);
+
+    gap: 4rem;
+  }
+
+  .essential-grid,
+  .philosophy-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+  .ingredient-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .explore-tools {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .profile-card {
+    grid-template-columns:
+      minmax(0, 1fr)
+      auto;
+
+    padding: 3rem;
+  }
+
+  .routine-layout {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(320px, 0.85fr);
+
+    align-items: start;
+  }
+
+  .routine-preview {
+    position: sticky;
+    top: 100px;
+  }
+
+  .dialog-details {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+  .routine-columns {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .site-footer {
+    grid-template-columns:
+      1.2fr
+      1fr;
+
+    align-items: start;
+  }
+
+  .footer-meta {
+    grid-column: 1 / -1;
+  }
+
+}
+
+@media screen and (min-width: 980px) {
+
+  .ingredient-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+  .site-footer {
+    grid-template-columns:
+      1fr
+      1fr
+      1fr;
+  }
+
+  .footer-meta {
+    grid-column: auto;
+    text-align: right;
+  }
+
+}
