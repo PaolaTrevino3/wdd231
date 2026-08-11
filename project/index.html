@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Glow Guide is a simple skincare website that helps beginners build healthy, realistic skincare routines.">
+  <meta name="author" content="Paola Trevino">
+  <title>Glow Guide | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="scripts/project.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">Glow Guide</a>
+    <button id="menu" aria-label="Open navigation menu">☰</button>
+    <nav class="navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="routines.html">Routines</a>
+      <a href="contact.html">Skin Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="tagline">Simple skincare for real life</p>
+        <h1>Build a routine your skin can actually understand.</h1>
+        <p>Glow Guide helps beginners learn the basics of cleansing, moisturizing, and sun protection without buying ten mysterious bottles that all look expensive and suspicious.</p>
+        <a class="button" href="routines.html">Explore Routines</a>
+      </div>
+      <picture>
+        <source srcset="images/skincare-hero-small.webp" media="(max-width: 600px)">
+        <img src="images/skincare-hero.webp" alt="Skincare products arranged on a clean bathroom counter">
+      </picture>
+    </section>
+
+    <section class="intro section-card">
+      <h2>Why a simple routine matters</h2>
+      <p>A consistent skincare routine can support healthy-looking skin, protect the skin barrier, and reduce common problems caused by dryness, oil buildup, and sun exposure. The best routine is not the longest one. It is the one you can follow every day.</p>
+    </section>
+
+    <section class="cards-grid" id="home-cards">
+      <article class="info-card">
+        <img src="images/cleanser.webp" alt="Gentle facial cleanser bottle" loading="lazy">
+        <h3>Cleanse</h3>
+        <p>Remove sweat, sunscreen, and oil without stripping your skin.</p>
+      </article>
+      <article class="info-card">
+        <img src="images/moisturizer.webp" alt="Moisturizer cream jar" loading="lazy">
+        <h3>Moisturize</h3>
+        <p>Support your skin barrier with hydration that matches your skin type.</p>
+      </article>
+      <article class="info-card">
+        <img src="images/sunscreen.webp" alt="Tube of sunscreen near a mirror" loading="lazy">
+        <h3>Protect</h3>
+        <p>Use sunscreen during the day to help prevent sun damage.</p>
+      </article>
+    </section>
+
+    <section class="section-card visit-box">
+      <h2>Your saved skin type</h2>
+      <p id="saved-message">Take the skin quiz to save your skin type.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Glow Guide | Paola Trevino</p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>

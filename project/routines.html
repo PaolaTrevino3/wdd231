@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Skincare routines by skin type for beginners, including oily, dry, sensitive, and combination skin.">
+  <meta name="author" content="Paola Trevino">
+  <title>Glow Guide | Routines</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="scripts/project.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">Glow Guide</a>
+    <button id="menu" aria-label="Open navigation menu">☰</button>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="routines.html" class="active">Routines</a>
+      <a href="contact.html">Skin Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <p class="tagline">Routine builder</p>
+      <h1>Choose a skincare routine by skin type.</h1>
+      <p>Start small, stay consistent, and avoid treating your face like a science fair volcano.</p>
+    </section>
+
+    <section class="filter-panel section-card">
+      <h2>Filter routines</h2>
+      <div class="button-row">
+        <button class="filter-button" data-filter="all">All</button>
+        <button class="filter-button" data-filter="oily">Oily</button>
+        <button class="filter-button" data-filter="dry">Dry</button>
+        <button class="filter-button" data-filter="sensitive">Sensitive</button>
+        <button class="filter-button" data-filter="combination">Combination</button>
+      </div>
+    </section>
+
+    <section id="routine-list" class="routine-grid"></section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Glow Guide | Paola Trevino</p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Take a beginner skincare quiz and save your skin type using localStorage.">
+  <meta name="author" content="Paola Trevino">
+  <title>Glow Guide | Skin Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="scripts/project.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">Glow Guide</a>
+    <button id="menu" aria-label="Open navigation menu">☰</button>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="routines.html">Routines</a>
+      <a href="contact.html" class="active">Skin Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <p class="tagline">Personal routine help</p>
+      <h1>Take the skin quiz.</h1>
+      <p>This form saves your skin type in your browser so the home page can display a personalized message.</p>
+    </section>
+
+    <section class="form-section section-card">
+      <form id="skin-form" action="thankyou.html" method="get">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required autocomplete="given-name">
+
+        <label for="skin-type">Skin Type</label>
+        <select id="skin-type" name="skin-type" required>
+          <option value="" disabled selected>Select your skin type</option>
+          <option value="oily">Oily</option>
+          <option value="dry">Dry</option>
+          <option value="sensitive">Sensitive</option>
+          <option value="combination">Combination</option>
+        </select>
+
+        <fieldset>
+          <legend>Main skincare goal</legend>
+          <label><input type="radio" name="goal" value="hydration" required> More hydration</label>
+          <label><input type="radio" name="goal" value="oil-control"> Oil control</label>
+          <label><input type="radio" name="goal" value="gentle-care"> Gentle care</label>
+        </fieldset>
+
+        <label for="message">Tell us about your skin concerns</label>
+        <textarea id="message" name="message" rows="5" placeholder="Example: My skin feels dry after washing."></textarea>
+
+        <label class="check-line">
+          <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+          Send me simple skincare tips
+        </label>
+
+        <button class="button" type="submit">Save My Routine</button>
+      </form>
+      <p id="form-feedback" class="feedback"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Glow Guide | Paola Trevino</p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>
